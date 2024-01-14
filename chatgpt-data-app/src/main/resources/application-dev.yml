@@ -1,0 +1,41 @@
+server:
+  port: 8090
+
+# 应用配置
+app:
+  config:
+    # 版本，方便通过接口版本升级
+    api-version: v1
+    # 跨域，开发阶段可以设置为 * 不限制
+    cross-origin: '*'
+
+# 线程池配置
+thread:
+  pool:
+    executor:
+      config:
+        core-pool-size: 20
+        max-pool-size: 50
+        keep-alive-time: 5000
+        block-queue-size: 5000
+        policy: CallerRunsPolicy
+
+# ChatGPT SDK Config
+chatgpt:
+  sdk:
+    config:
+      # 官网地址 https://api.openai.com/
+      # https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/
+      api-host: https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/
+      # 官网申请 https://platform.openai.com/account/api-keys
+      api-key: sk-FpBzSH9hJwk1FQQz21Be10DeD6B44e1c905eAaD3759923A7
+
+      # sk-FpBzSH9hJwk1FQQz21Be10DeD6B44e1c905eAaD3759923A7
+      # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123 - 有时效性，主要为了大家学习使用
+      auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3bHkiLCJleHAiOjE3MDUxMjA2MDQsImlhdCI6MTcwNTEyMDMwNCwianRpIjoiZGMxNTc4NjUtYmZhYy00Zjk4LWFmY2UtMTE3YTU0MzdhMjViIiwidXNlcm5hbWUiOiJ3bHkifQ.-UOGyC0ZkQl3AOy7ggx1OjDHC42AgsgtbJ146nHBKGo
+
+# 日志
+logging:
+  level:
+    root: info
+  config: classpath:logback-spring.xml

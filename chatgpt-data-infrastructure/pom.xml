@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.wly.chatgpt</groupId>
         <artifactId>chatgpt-data</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
 
     <groupId>com.wly.chatgpt.data.infrastructure</groupId>
