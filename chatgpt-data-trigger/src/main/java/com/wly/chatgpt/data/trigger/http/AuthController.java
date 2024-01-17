@@ -54,6 +54,7 @@ public class AuthController {
             return Response.<String>builder()
                     .code(Constants.ResponseCode.SUCCESS.getCode())
                     .info(Constants.ResponseCode.SUCCESS.getInfo())
+                    .data(authStateEntity.getToken())
                     .build();
         } catch (Exception e) {
             log.error("鉴权登录校验失败，验证码： {}", code);
