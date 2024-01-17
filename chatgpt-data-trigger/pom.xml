@@ -43,7 +43,6 @@
             <groupId>com.wly.chatgpt.data.domain</groupId>
             <artifactId>chatgpt-data-domain</artifactId>
             <version>1.0</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

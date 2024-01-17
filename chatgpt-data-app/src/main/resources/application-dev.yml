@@ -34,6 +34,18 @@ chatgpt:
       # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123 - 有时效性，主要为了大家学习使用
       auth-token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ3bHkiLCJleHAiOjE3MDUxMjA2MDQsImlhdCI6MTcwNTEyMDMwNCwianRpIjoiZGMxNTc4NjUtYmZhYy00Zjk4LWFmY2UtMTE3YTU0MzdhMjViIiwidXNlcm5hbWUiOiJ3bHkifQ.-UOGyC0ZkQl3AOy7ggx1OjDHC42AgsgtbJ146nHBKGo
 
+# 微信公众号配置信息
+# originalid：原始ID
+# appid：个人AppID
+# token：开通接口服务自定义设置
+wx:
+  config:
+    originalid: gh_28c92be94d7d
+    appid: wxd934a0cfa25171ff
+    token: bcwly
+
+
+
 # 日志
 logging:
   level:
