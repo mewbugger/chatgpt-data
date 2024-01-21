@@ -27,7 +27,7 @@ public class AuthService extends AbstractAuthService{
                     .info(AuthTypeVO.A0001.getInfo())
                     .build();
         }
-        // 移除缓存Key值
+        // 移除缓存Key值 因为验证码只能校验一次，逻辑运行到这里就是已经校验成功了，要把cache中的缓存删掉
         codeCache.invalidate(openId);
         codeCache.invalidate(code);
         // 验证码校验成功
