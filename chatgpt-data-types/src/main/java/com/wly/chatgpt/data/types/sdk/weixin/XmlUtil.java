@@ -23,7 +23,6 @@ public class XmlUtil {
     /**
      * 解析微信发来的请求(xml)
      */
-    @SuppressWarnings("unchecked")
     public static Map<String, String> xmlToMap(HttpServletRequest request) throws Exception {
         // 从request中取得输入流
         try (InputStream inputStream = request.getInputStream()) {

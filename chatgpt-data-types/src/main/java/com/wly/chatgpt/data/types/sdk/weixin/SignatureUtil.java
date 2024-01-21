@@ -9,7 +9,12 @@ import java.security.NoSuchAlgorithmException;
 public class SignatureUtil {
 
     /**
-     * 验证签名
+     * 验证签名 token+timestamp+nonce转换为byte数组后再转换为十六进制字符串应该和signature相等，视作验证成功
+     * @param token
+     * @param signature
+     * @param timestamp
+     * @param nonce
+     * @return
      */
     public static boolean check(String token, String signature, String timestamp, String nonce) {
         String[] arr = new String[]{token, timestamp, nonce};
