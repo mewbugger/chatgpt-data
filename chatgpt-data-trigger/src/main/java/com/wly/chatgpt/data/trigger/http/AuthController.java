@@ -36,6 +36,8 @@ public class AuthController {
      * http://localhost:8091/api/v1/auth/login \
      * -H 'Content-Type: application/x-www-form-urlencoded' \
      * -d 'code=8815'
+     *
+     * windows版可以在apifox中查看
      */
     @RequestMapping(value = "login", method = RequestMethod.POST)
     public Response<String> doLogin(@RequestParam String code) {

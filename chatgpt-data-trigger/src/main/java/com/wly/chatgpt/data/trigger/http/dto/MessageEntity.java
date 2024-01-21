@@ -13,8 +13,11 @@ import lombok.NoArgsConstructor;
 
 public class MessageEntity {
 
+    // 角色
     private String role;
+    // 内容
     private String content;
+    // 名字
     private String name;
 
 }

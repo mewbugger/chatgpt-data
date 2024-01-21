@@ -22,6 +22,7 @@ import java.util.Date;
 @RequestMapping("/api/${app.config.api-version}/wx/portal/{appid}")
 public class WeiXinPortalController {
 
+    // 公众号中的originalId
     @Value("${wx.config.originalid}")
     private String originalId;
 
@@ -41,6 +42,8 @@ public class WeiXinPortalController {
      * nonce     微信端发来的随机字符串
      * echostr   微信端发来的验证字符串
      */
+    // "/api/${app.config.api-version}/wx/portal/{appid}" 接收这个接口的文本消息
+    // 处理验证请求 即在公众号的配置中心里配置url
     @GetMapping(produces = "text/plain;charset-utf-8")
     public String validate(@PathVariable String appid,
                            @RequestParam(value = "signature", required = false) String signature,
@@ -64,6 +67,8 @@ public class WeiXinPortalController {
         }
     }
 
+    // "/api/${app.config.api-version}/wx/portal/{appid}" 接收这个接口的xml消息
+    // 处理微信公众号的用户消息
     @PostMapping(produces = "application/xml; charset=UTF-8")
     public String post(@PathVariable String appid,
                        @RequestBody String requestBody,
@@ -75,9 +80,9 @@ public class WeiXinPortalController {
                        @RequestParam(name = "msg_signature", required = false) String msgSignature) {
         try {
             log.info("接收微信公众号信息请求{}开始{}", openid, requestBody);
-            // 消息转换
+            // 消息转换 把公众号发的内容从xml转换成消息文本实体
             MessageTextEntity message = XmlUtil.xmlToBean(requestBody, MessageTextEntity.class);
-            // 构建实体
+            // 构建实体 通过消息文本实体转换成用户行为消息实体
             UserBehaviorMessageEntity entity = UserBehaviorMessageEntity.builder()
                     .openId(openid)
                     .fromUserName(message.getFromUserName())
@@ -87,7 +92,7 @@ public class WeiXinPortalController {
                     .createTime(new Date(Long.parseLong(message.getCreateTime()) * 1000L))
                     .build();
 
-            // 受理消息
+            // 受理消息 接收用户行为消息实体后将消息实体转换成xml
             String result = weiXinBehaviorService.acceptUserBehavior(entity);
             log.info("接收微信公众号信息请求{}完成{}", openid, result);
             return result;
