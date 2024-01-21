@@ -5,6 +5,11 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
  */
 public class MessageTextEntity {
 
+    /**
+     *  @XStreamAlias
+     *      用于为Java对象中的类或字段定义一个XML别名
+     *      当将一个Java对象转换为XML时，XStreamAlias可以用于指定该对象在XML中的标签名。
+     */
     @XStreamAlias("MsgId")
     private String msgId;
     @XStreamAlias("ToUserName")

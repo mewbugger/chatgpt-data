@@ -98,6 +98,7 @@ public abstract class AbstractAuthService implements IAuthService{
             Date exp = new Date(expMillis);
             builder.setExpiration(exp);
         }
+        // 将构建好的JWT压缩成一个完整的、URL安全的字符串表示
         return builder.compact();
     }
 

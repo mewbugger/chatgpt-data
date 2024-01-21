@@ -13,6 +13,7 @@ import javax.annotation.Resource;
 @Slf4j
 public abstract class AbstractChatService implements IChatService{
 
+    // openaiAiApi的会话接口
     @Resource
     protected OpenAiSession openAiSession;
 

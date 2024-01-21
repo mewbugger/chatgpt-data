@@ -14,5 +14,10 @@ public interface IAuthService {
      */
     AuthStateEntity doLogin(String code);
 
+    /**
+     * 校验token
+     * @param token
+     * @return
+     */
     boolean checkToken(String token);
 }

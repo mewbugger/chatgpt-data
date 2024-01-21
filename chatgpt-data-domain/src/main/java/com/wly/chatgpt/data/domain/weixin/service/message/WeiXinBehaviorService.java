@@ -29,9 +29,9 @@ public class WeiXinBehaviorService implements IWeiXinBehaviorService {
     private Cache<String, String> codeCache;
 
     /**
-     * 1. 用户的请求行为，分为时间event，消息text，这里我们只要处理消息内容
+     * 1. 用户的请求行为，分为时间event，文本text，这里我们只要处理文本内容
      * 2. 用户行为、消息类型，是多样性的，这部分如果用户有更多的扩展需求，可以使用设计模式【模板模式+策略模式+工厂模式】，分析逻辑
-     * @param userBehaviorMessageEntity
+     * @param userBehaviorMessageEntity 用户行为消息实体类
      * @return
      */
     @Override
