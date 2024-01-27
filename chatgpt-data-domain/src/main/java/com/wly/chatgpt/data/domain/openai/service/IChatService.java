@@ -11,7 +11,7 @@ public interface IChatService {
      * @param chatProcess
      * @return
      */
-    ResponseBodyEmitter completions(ResponseBodyEmitter emitter, ChatProcessAggregate chatProcess);
+    ResponseBodyEmitter completions(ResponseBodyEmitter emitter, ChatProcessAggregate chatProcess) throws Exception;
 
 
 }

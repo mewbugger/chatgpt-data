@@ -20,4 +20,11 @@ public interface IAuthService {
      * @return
      */
     boolean checkToken(String token);
+
+    /**
+     * 通过token返回白名单需要用的openid
+     * @param token
+     * @return
+     */
+    String openid(String token);
 }

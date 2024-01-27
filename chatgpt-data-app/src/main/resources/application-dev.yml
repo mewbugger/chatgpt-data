@@ -8,6 +8,10 @@ app:
     api-version: v1
     # 跨域，开发阶段可以设置为 * 不限制
     cross-origin: '*'
+    # 访问频次限制
+    limit-count: 10
+    # 白名单，不做频次拦截[微信的openid]
+    white-list: ojbZUv18lbmriaTjcCWBYkOrSbHA # 瞎配的，暂时每个用户都需要频次拦截
 
 # 线程池配置
 thread:

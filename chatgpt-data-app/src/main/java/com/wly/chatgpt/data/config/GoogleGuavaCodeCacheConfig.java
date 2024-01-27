@@ -16,4 +16,12 @@ public class GoogleGuavaCodeCacheConfig {
                 .expireAfterWrite(3, TimeUnit.MINUTES) // 设置缓存项写入后3分钟后过期
                 .build(); // 构建并返回Cache实例
     }
+
+    @Bean(name = "visitCache")
+    public Cache<String, Integer> visitCache() {
+        return CacheBuilder.newBuilder()
+                .expireAfterWrite(12, TimeUnit.HOURS)
+                .build();
+    }
+
 }

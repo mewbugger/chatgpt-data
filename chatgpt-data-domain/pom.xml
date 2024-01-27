@@ -70,6 +70,13 @@
             <artifactId>chatgpt-data-types</artifactId>
             <version>1.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.github.houbb/sensitive-word -->
+        <dependency>
+            <groupId>com.github.houbb</groupId>
+            <artifactId>sensitive-word</artifactId>
+            <version>0.8.0</version>
+        </dependency>
     </dependencies>
 
     <build>
