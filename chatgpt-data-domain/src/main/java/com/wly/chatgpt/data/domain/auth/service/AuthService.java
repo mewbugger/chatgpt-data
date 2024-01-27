@@ -35,6 +35,7 @@ public class AuthService extends AbstractAuthService{
         return AuthStateEntity.builder()
                 .code(AuthTypeVO.A0000.getCode())
                 .info(AuthTypeVO.A0000.getInfo())
+                .openId((openId))
                 .build();
     }
 

@@ -90,6 +90,7 @@ public class ChatGPTAIServiceController {
 
             // 4. 构建参数
             ChatProcessAggregate chatProcessAggregate = ChatProcessAggregate.builder()
+                    .openid(openid)
                     .token(token)
                     .model(request.getModel())
                     .messages(request.getMessages().stream()
