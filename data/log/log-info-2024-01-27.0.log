@@ -1,3 +1,47 @@
+24-01-27.23:21:41.833 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 19516 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-27.23:21:41.834 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.23:21:42.483 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.23:21:42.489 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.23:21:42.489 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.23:21:42.489 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.23:21:42.566 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.23:21:42.567 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 705 ms
+24-01-27.23:21:43.617 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.23:21:43.631 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.23:21:43.637 [main            ] INFO  Application            - Started Application in 2.104 seconds (JVM running for 2.738)
+24-01-27.23:23:52.437 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 8276 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-27.23:23:52.439 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.23:23:52.920 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.23:23:52.924 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.23:23:52.925 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.23:23:52.925 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.23:23:52.996 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.23:23:52.996 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 536 ms
+24-01-27.23:23:53.772 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.23:23:53.783 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.23:23:53.789 [main            ] INFO  Application            - Started Application in 1.598 seconds (JVM running for 2.127)
+24-01-27.23:24:26.955 [http-nio-8090-exec-3] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.23:24:26.956 [http-nio-8090-exec-3] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.23:24:26.957 [http-nio-8090-exec-3] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-27.23:24:26.998 [http-nio-8090-exec-3] INFO  WeiXinPortalController - 微信公众号验签信息wxd934a0cfa25171ff开始 [d6643ed75b0d384dc40c72c915266b184faeb0ef, 1706369065, 1316441116, 54727269997196601]
+24-01-27.23:24:27.007 [http-nio-8090-exec-3] INFO  WeiXinPortalController - 微信公众号验签信息wxd934a0cfa25171ff完成 check, true
+24-01-27.23:25:13.502 [http-nio-8090-exec-4] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1706369111</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24429331707544496</MsgId>
+</xml>
+24-01-27.23:25:13.652 [http-nio-8090-exec-4] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1706369113</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 2140 有效期3分组]]></Content>
+</xml>
+24-01-27.23:25:21.699 [http-nio-8090-exec-2] INFO  AuthController         - 鉴权登录校验开始，验证码：2140
+24-01-27.23:25:21.850 [http-nio-8090-exec-2] INFO  AuthController         - 鉴权登录校验完成，验证码：2140 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNjM3OTIwMSwiaWF0IjoxNzA2MzY5MTIxLCJqdGkiOiIzM2MzMzJiYS0wNzJjLTRjNWEtODlkNC1kNWFiNjk0YWQxOGQifQ.OAjKFremc90G52Fyn2lzJLYW2DygP16TyHM3mTT6IG0"}
+24-01-27.23:25:32.644 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-4 请求信息：[{"content":"日本有什么性价比高的东西","role":"user"},{"content":"0003","role":"system"},{"content":"移动","role":"user"}]
 24-01-27.23:25:32.710 [http-nio-8090-exec-8] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-4 发生异常
 java.lang.NullPointerException: null
 	at com.wly.chatgpt.data.domain.auth.service.AuthService.openid(AuthService.java:49)
@@ -105,6 +149,7 @@ com.wly.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+24-01-27.23:25:40.107 [http-nio-8090-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-4 请求信息：[{"content":"移动","role":"user"},{"content":"{\"timestamp\":\"2024-01-27T15:25:32.740+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/v1/chatgpt/chat/completions\"}","role":"system"},{"content":"很好","role":"user"}]
 24-01-27.23:25:40.109 [http-nio-8090-exec-5] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-4 发生异常
 java.lang.NullPointerException: null
 	at com.wly.chatgpt.data.domain.auth.service.AuthService.openid(AuthService.java:49)
@@ -212,6 +257,7 @@ com.wly.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+24-01-27.23:27:42.204 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"很好","role":"user"}]
 24-01-27.23:27:42.206 [http-nio-8090-exec-6] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 java.lang.NullPointerException: null
 	at com.wly.chatgpt.data.domain.auth.service.AuthService.openid(AuthService.java:49)
@@ -319,6 +365,21 @@ com.wly.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+24-01-27.23:35:01.900 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 23180 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-27.23:35:01.902 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.23:35:02.364 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.23:35:02.368 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.23:35:02.369 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.23:35:02.369 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.23:35:02.437 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.23:35:02.437 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 512 ms
+24-01-27.23:35:03.169 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.23:35:03.178 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.23:35:03.182 [main            ] INFO  Application            - Started Application in 1.528 seconds (JVM running for 2.056)
+24-01-27.23:35:19.658 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.23:35:19.658 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.23:35:19.659 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-27.23:35:20.059 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"很好","role":"user"},{"content":"{\"timestamp\":\"2024-01-27T15:27:42.208+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/v1/chatgpt/chat/completions\"}","role":"system"},{"content":"很好","role":"user"}]
 24-01-27.23:35:20.146 [http-nio-8090-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 java.lang.NullPointerException: null
 	at com.wly.chatgpt.data.domain.auth.service.AuthService.openid(AuthService.java:50)
@@ -426,6 +487,21 @@ com.wly.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+24-01-27.23:38:36.081 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 9896 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-27.23:38:36.083 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.23:38:36.639 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.23:38:36.644 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.23:38:36.645 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.23:38:36.645 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.23:38:36.742 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.23:38:36.742 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 632 ms
+24-01-27.23:38:37.573 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.23:38:37.583 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.23:38:37.589 [main            ] INFO  Application            - Started Application in 1.799 seconds (JVM running for 2.722)
+24-01-27.23:38:56.004 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.23:38:56.004 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.23:38:56.004 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-27.23:38:56.286 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"你好","role":"user"}]
 24-01-27.23:42:33.283 [http-nio-8090-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 java.lang.NullPointerException: null
 	at com.wly.chatgpt.data.domain.auth.service.AuthService.openid(AuthService.java:49)
@@ -533,6 +609,21 @@ com.wly.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+24-01-27.23:42:51.157 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 7740 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-27.23:42:51.159 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.23:42:51.716 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.23:42:51.722 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.23:42:51.722 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.23:42:51.722 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.23:42:51.810 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.23:42:51.810 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 624 ms
+24-01-27.23:42:52.623 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.23:42:52.634 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.23:42:52.639 [main            ] INFO  Application            - Started Application in 1.831 seconds (JVM running for 2.432)
+24-01-27.23:43:05.766 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.23:43:05.767 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.23:43:05.768 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-27.23:43:06.204 [http-nio-8090-exec-1] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"你好","role":"user"},{"content":"{\"timestamp\":\"2024-01-27T15:42:33.294+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/v1/chatgpt/chat/completions\"}","role":"system"},{"content":"你好","role":"user"}]
 24-01-27.23:43:28.155 [http-nio-8090-exec-1] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 java.lang.NullPointerException: null
 	at com.wly.chatgpt.data.domain.auth.service.AuthService.openid(AuthService.java:49)
@@ -640,6 +731,37 @@ com.wly.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+24-01-27.23:47:11.976 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 18460 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-27.23:47:11.978 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.23:47:12.478 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.23:47:12.482 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.23:47:12.482 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.23:47:12.483 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.23:47:12.554 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.23:47:12.554 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 549 ms
+24-01-27.23:47:13.333 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.23:47:13.341 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.23:47:13.346 [main            ] INFO  Application            - Started Application in 1.615 seconds (JVM running for 2.168)
+24-01-27.23:54:03.298 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.23:54:03.302 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.23:54:03.305 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+24-01-27.23:54:03.353 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1706370841</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24429356048672082</MsgId>
+</xml>
+24-01-27.23:54:03.454 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1706370843</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 0015 有效期3分组]]></Content>
+</xml>
+24-01-27.23:54:08.699 [http-nio-8090-exec-2] INFO  AuthController         - 鉴权登录校验开始，验证码：0015
+24-01-27.23:54:08.874 [http-nio-8090-exec-2] INFO  AuthController         - 鉴权登录校验完成，验证码：0015 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNjM4MDkyOCwiaWF0IjoxNzA2MzcwODQ4LCJqdGkiOiIwMmQ5YzEwOC1kOWRlLTQxOWEtYjU1NC0wNTllNzNiMGM4YTEifQ.Trlvk-VHtM8CaXPH2vXW5MZ_jNrQOmO2_IPSlNugxvI"}
+24-01-27.23:54:38.152 [http-nio-8090-exec-5] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"你好","role":"user"},{"content":"{\"timestamp\":\"2024-01-27T15:43:28.165+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"path\":\"/api/v1/chatgpt/chat/completions\"}","role":"system"},{"content":"你好","role":"user"}]
 24-01-27.23:54:38.169 [http-nio-8090-exec-5] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 java.lang.NullPointerException: null
 	at com.wly.chatgpt.data.domain.auth.service.AuthService.openid(AuthService.java:49)
@@ -747,6 +869,67 @@ com.wly.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+24-01-27.23:54:47.485 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 20220 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-27.23:54:47.487 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.23:54:48.038 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.23:54:48.044 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.23:54:48.044 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.23:54:48.044 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.23:54:48.134 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.23:54:48.135 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 623 ms
+24-01-27.23:54:48.949 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.23:54:48.960 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.23:54:48.966 [main            ] INFO  Application            - Started Application in 1.787 seconds (JVM running for 2.39)
+24-01-27.23:54:57.017 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.23:54:57.018 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.23:54:57.019 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-27.23:54:57.105 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1706370895</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24429355631308939</MsgId>
+</xml>
+24-01-27.23:54:57.250 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1706370897</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 7699 有效期3分组]]></Content>
+</xml>
+24-01-27.23:55:02.271 [http-nio-8090-exec-3] INFO  AuthController         - 鉴权登录校验开始，验证码：7699
+24-01-27.23:55:41.328 [http-nio-8090-exec-3] INFO  AuthController         - 鉴权登录校验完成，验证码：7699 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNjM4MTAyMSwiaWF0IjoxNzA2MzcwOTQxLCJqdGkiOiIzZTA0NGQ0Ni03ODllLTRmMDgtODU4ZS01YWE1NGYyOTJiYmEifQ.egBLVIwClLDBxFWZ2D-t77X6gRTJhIDKi8qhi8aSKqs"}
+24-01-27.23:55:44.921 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 15144 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-27.23:55:44.922 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.23:55:45.385 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.23:55:45.389 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.23:55:45.390 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.23:55:45.390 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.23:55:45.457 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.23:55:45.457 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 513 ms
+24-01-27.23:55:46.214 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.23:55:46.224 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.23:55:46.229 [main            ] INFO  Application            - Started Application in 1.552 seconds (JVM running for 2.081)
+24-01-27.23:55:55.949 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.23:55:55.952 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.23:55:55.954 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-27.23:55:55.994 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1706370954</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24429358208106120</MsgId>
+</xml>
+24-01-27.23:55:56.104 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1706370956</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 6228 有效期3分组]]></Content>
+</xml>
+24-01-27.23:56:02.868 [http-nio-8090-exec-4] INFO  AuthController         - 鉴权登录校验开始，验证码：6228
+24-01-27.23:56:03.101 [http-nio-8090-exec-4] INFO  AuthController         - 鉴权登录校验完成，验证码：6228 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNjM4MTA0MiwiaWF0IjoxNzA2MzcwOTYyLCJqdGkiOiJjZWI3ZTk1Yy1iNjA4LTQ5NTItOTQyMy0xZjhmZGE1MTU1N2UifQ.kiizg_FKrwu-dcT3Klme1oi2t6ZTADl6wroSOx0eWL8"}
+24-01-27.23:56:08.024 [http-nio-8090-exec-8] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"你好","role":"user"}]
 24-01-27.23:56:08.072 [http-nio-8090-exec-8] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 java.lang.NullPointerException: null
 	at com.wly.chatgpt.data.domain.auth.service.AuthService.openid(AuthService.java:50)
@@ -854,6 +1037,38 @@ com.wly.chatgpt.data.types.exception.ChatGPTException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+24-01-27.23:56:53.011 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 22612 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-27.23:56:53.013 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-27.23:56:53.490 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-27.23:56:53.494 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-27.23:56:53.494 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-27.23:56:53.494 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-27.23:56:53.567 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-27.23:56:53.568 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 532 ms
+24-01-27.23:56:54.337 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-27.23:56:54.347 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-27.23:56:54.351 [main            ] INFO  Application            - Started Application in 1.584 seconds (JVM running for 2.123)
+24-01-27.23:57:03.329 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-27.23:57:03.330 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-27.23:57:03.331 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-27.23:57:03.390 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1706371021</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24429358914883876</MsgId>
+</xml>
+24-01-27.23:57:03.553 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1706371023</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 5886 有效期3分组]]></Content>
+</xml>
+24-01-27.23:57:09.674 [http-nio-8090-exec-2] INFO  AuthController         - 鉴权登录校验开始，验证码：5886
+24-01-27.23:57:09.827 [http-nio-8090-exec-2] INFO  AuthController         - 鉴权登录校验完成，验证码：5886 结果： {"code":"0000","info":"验证成功","openId":"oBzHc6QeSFc39Z_kjTmDqJmUoSgY","token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvQnpIYzZRZVNGYzM5Wl9ralRtRHFKbVVvU2dZIiwib3BlbklkIjoib0J6SGM2UWVTRmMzOVpfa2pUbURxSm1Vb1NnWSIsImV4cCI6MTcwNjM4MTEwOSwiaWF0IjoxNzA2MzcxMDI5LCJqdGkiOiI2Yzg3MDYyOS02NGYwLTQ3YjYtYTU0Mi0xMjM0YWQ0MzBlNzEifQ.CXBId6bNUvbF3utK2yRY-5lI-ILErkZpgvpZ0kTsIpg"}
+24-01-27.23:57:12.909 [http-nio-8090-exec-9] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"你好","role":"user"}]
+24-01-27.23:57:12.958 [http-nio-8090-exec-9] INFO  ChatGPTAIServiceController - 流式问答请求处理，openid:oBzHc6QeSFc39Z_kjTmDqJmUoSgY 请求模型:gpt-3.5-turbo
 24-01-27.23:57:12.963 [http-nio-8090-exec-9] ERROR ChatGPTAIServiceController - 流式应答，请求模型：gpt-3.5-turbo 发生异常
 java.lang.NullPointerException: null
 	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:878)

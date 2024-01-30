@@ -1,0 +1,625 @@
+24-01-17.18:00:43.813 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 17804 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-17.18:00:43.815 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-17.18:00:44.509 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-17.18:00:44.514 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-17.18:00:44.514 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-17.18:00:44.514 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-17.18:00:44.604 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-17.18:00:44.604 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 747 ms
+24-01-17.18:00:45.283 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-17.18:00:45.295 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-17.18:00:45.300 [main            ] INFO  Application            - Started Application in 1.874 seconds (JVM running for 2.533)
+24-01-17.18:01:46.984 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-17.18:01:46.984 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-17.18:01:46.985 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-17.18:01:47.003 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 微信公众号验签信息wxd934a0cfa25171ff开始 [457e5a7e110803903355a02ed98126e818d8d38f, 1705485708, 1538617812, 4439634028574782878]
+24-01-17.18:01:47.008 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 微信公众号验签信息wxd934a0cfa25171ff完成 check, true
+24-01-17.18:06:12.082 [http-nio-8090-exec-2] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1705485973</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24416687587030842</MsgId>
+</xml>
+24-01-17.18:06:12.154 [http-nio-8090-exec-2] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1705485972</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 9691 有效期3分组]]></Content>
+</xml>
+24-01-17.18:06:18.164 [http-nio-8090-exec-4] INFO  AuthController         - 鉴权登录校验开始，验证码：9691
+24-01-17.18:06:18.295 [http-nio-8090-exec-4] INFO  AuthController         - 鉴权登录校验完成，验证码：9691 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNTQ5NjA1OCwiaWF0IjoxNzA1NDg1OTc4LCJqdGkiOiJkN2JkZmM4ZS0zNWEwLTQ2NTAtYTVhYy1kOTIxZGY3N2Q4MTkifQ.BTuXKFpWnoRccolXuDMXydcgct_SiN30eEAGkbceIwg"}
+24-01-17.18:06:22.223 [http-nio-8090-exec-5] INFO  AuthController         - 鉴权登录校验开始，验证码：9691
+24-01-17.18:06:22.223 [http-nio-8090-exec-5] INFO  AuthService            - 鉴权，用户收入的验证码不存在 9691
+24-01-17.18:06:22.223 [http-nio-8090-exec-5] INFO  AuthController         - 鉴权登录校验完成，验证码：9691 结果： {"code":"0001","info":"验证码不存在"}
+24-01-17.18:06:27.809 [http-nio-8090-exec-6] INFO  AuthController         - 鉴权登录校验开始，验证码：9691
+24-01-17.18:06:27.810 [http-nio-8090-exec-6] INFO  AuthService            - 鉴权，用户收入的验证码不存在 9691
+24-01-17.18:06:27.810 [http-nio-8090-exec-6] INFO  AuthController         - 鉴权登录校验完成，验证码：9691 结果： {"code":"0001","info":"验证码不存在"}
+24-01-17.18:07:13.508 [http-nio-8090-exec-7] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1705486030</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24416687604306721</MsgId>
+</xml>
+24-01-17.18:07:13.514 [http-nio-8090-exec-7] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1705486033</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 5654 有效期3分组]]></Content>
+</xml>
+24-01-17.18:07:20.164 [http-nio-8090-exec-9] INFO  AuthController         - 鉴权登录校验开始，验证码：5654
+24-01-17.18:07:20.165 [http-nio-8090-exec-9] INFO  AuthController         - 鉴权登录校验完成，验证码：5654 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNTQ5NjEyMCwiaWF0IjoxNzA1NDg2MDQwLCJqdGkiOiIzOGQ2MjMyNC1mYmQwLTRhNGYtOGU5NS01ZWU2ODkwMGM1Y2YifQ.jINSSEheDlf0U7mg36kcl7Co0qIyOljWJOjD3bJeqoU"}
+24-01-17.18:07:27.707 [http-nio-8090-exec-10] INFO  AuthController         - 鉴权登录校验开始，验证码：5654
+24-01-17.18:07:27.707 [http-nio-8090-exec-10] INFO  AuthService            - 鉴权，用户收入的验证码不存在 5654
+24-01-17.18:07:27.707 [http-nio-8090-exec-10] INFO  AuthController         - 鉴权登录校验完成，验证码：5654 结果： {"code":"0001","info":"验证码不存在"}
+24-01-17.18:12:12.847 [http-nio-8090-exec-3] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1705486329</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24416693413814780</MsgId>
+</xml>
+24-01-17.18:12:12.863 [http-nio-8090-exec-3] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1705486332</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 9320 有效期3分组]]></Content>
+</xml>
+24-01-17.18:12:18.107 [http-nio-8090-exec-5] INFO  AuthController         - 鉴权登录校验开始，验证码：9320
+24-01-17.18:12:18.108 [http-nio-8090-exec-5] INFO  AuthController         - 鉴权登录校验完成，验证码：9320 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNTQ5NjQxOCwiaWF0IjoxNzA1NDg2MzM4LCJqdGkiOiI3YTQ5MDg5MS05MWY2LTRmYzQtOTU2Mi1iMGQ5YjE0YWY5YTEifQ.ajkCVA9JTph_Ule_XgHsI7tvln3xdgez4-DpnzofFdY"}
+24-01-17.18:19:14.191 [http-nio-8090-exec-7] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1705486755</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24416695846923222</MsgId>
+</xml>
+24-01-17.18:19:14.217 [http-nio-8090-exec-7] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1705486754</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 8096 有效期3分组]]></Content>
+</xml>
+24-01-17.18:19:19.425 [http-nio-8090-exec-9] INFO  AuthController         - 鉴权登录校验开始，验证码：8096
+24-01-17.18:19:19.426 [http-nio-8090-exec-9] INFO  AuthController         - 鉴权登录校验完成，验证码：8096 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNTQ5NjgzOSwiaWF0IjoxNzA1NDg2NzU5LCJqdGkiOiI1NWNmMjBkYi05YjU3LTRkZTQtYWRiMi1hZDc5YmYwY2IwMzkifQ.Mrv_Z-xy6q0D16JvhdewWhFFOyWv45A1KclM3FOeJdM"}
+24-01-17.18:20:44.244 [http-nio-8090-exec-1] INFO  AuthController         - 鉴权登录校验开始，验证码：8096
+24-01-17.18:20:44.244 [http-nio-8090-exec-1] INFO  AuthService            - 鉴权，用户收入的验证码不存在 8096
+24-01-17.18:20:44.244 [http-nio-8090-exec-1] INFO  AuthController         - 鉴权登录校验完成，验证码：8096 结果： {"code":"0001","info":"验证码不存在"}
+24-01-17.18:20:55.846 [http-nio-8090-exec-2] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1705486852</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24416701267353825</MsgId>
+</xml>
+24-01-17.18:20:55.855 [http-nio-8090-exec-2] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1705486855</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 0500 有效期3分组]]></Content>
+</xml>
+24-01-17.18:21:02.054 [http-nio-8090-exec-4] INFO  AuthController         - 鉴权登录校验开始，验证码：0500
+24-01-17.18:21:02.054 [http-nio-8090-exec-4] INFO  AuthController         - 鉴权登录校验完成，验证码：0500 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNTQ5Njk0MiwiaWF0IjoxNzA1NDg2ODYyLCJqdGkiOiIyMjVmMWVmZi0xMDhkLTQ3ZTItOTI2Ni00NmEzODNmMjZhM2YifQ.vQcwn69dWoC8LN13YBTtrPlNtoIzLolNfEltsQlofRU"}
+24-01-17.18:23:24.503 [http-nio-8090-exec-6] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1705487006</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24416702168389012</MsgId>
+</xml>
+24-01-17.18:23:24.510 [http-nio-8090-exec-6] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1705487004</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 8919 有效期3分组]]></Content>
+</xml>
+24-01-17.18:23:30.147 [http-nio-8090-exec-8] INFO  AuthController         - 鉴权登录校验开始，验证码：8919
+24-01-17.18:23:30.148 [http-nio-8090-exec-8] INFO  AuthController         - 鉴权登录校验完成，验证码：8919 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNTQ5NzA5MCwiaWF0IjoxNzA1NDg3MDEwLCJqdGkiOiIwYzYyOTBmZC0yYzQzLTRjNTUtOWJlMC1iN2UxNWI5M2Q4ODYifQ.iXjGlQf0aFJbFb9C4VCJ3xiiMb771QsHJI7tnMJ2esw"}
+24-01-17.18:24:10.429 [http-nio-8090-exec-9] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1705487052</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24416703865106164</MsgId>
+</xml>
+24-01-17.18:24:10.434 [http-nio-8090-exec-9] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1705487050</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 8877 有效期3分组]]></Content>
+</xml>
+24-01-17.18:24:14.738 [http-nio-8090-exec-1] INFO  AuthController         - 鉴权登录校验开始，验证码：8877
+24-01-17.18:24:14.738 [http-nio-8090-exec-1] INFO  AuthController         - 鉴权登录校验完成，验证码：8877 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNTQ5NzEzNCwiaWF0IjoxNzA1NDg3MDU0LCJqdGkiOiI1YjczMDBhMy04MTU5LTQ3N2ItODNlNi1lYzA3MTdjOTc2NWIifQ.nJUVwrN2NmvE97-WIOvg1gEyVPfipUbD9Dy3tkjkA8s"}
+24-01-17.18:29:09.180 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 12744 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-17.18:29:09.182 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-17.18:29:09.714 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-17.18:29:09.719 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-17.18:29:09.719 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-17.18:29:09.719 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-17.18:29:09.800 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-17.18:29:09.800 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 594 ms
+24-01-17.18:29:10.406 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-17.18:29:10.418 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-17.18:29:10.423 [main            ] INFO  Application            - Started Application in 1.487 seconds (JVM running for 2.036)
+24-01-17.18:30:31.228 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-17.18:30:31.228 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-17.18:30:31.229 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-01-17.18:30:31.248 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1705487432</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24416711807647632</MsgId>
+</xml>
+24-01-17.18:30:31.304 [http-nio-8090-exec-1] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1705487431</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 4578 有效期3分组]]></Content>
+</xml>
+24-01-17.18:30:37.451 [http-nio-8090-exec-3] INFO  AuthController         - 鉴权登录校验开始，验证码：4578
+24-01-17.18:30:37.537 [http-nio-8090-exec-3] INFO  AuthController         - 鉴权登录校验完成，验证码：4578 结果： {"code":"0000","info":"验证成功","token":"eyJhbGciOiJIUzI1NiJ9.eyJvcGVuSWQiOm51bGwsImV4cCI6MTcwNTQ5NzUxNywiaWF0IjoxNzA1NDg3NDM3LCJqdGkiOiI1OTA3NjM5OS1hMTc1LTRhM2QtODI0Zi1kZDA2MWE3MWE0ZDgifQ.uoPpBH67NL_Qra2RFxJ1XlZTTwCC-2lloejKgoTGmTk"}
+24-01-17.18:35:58.077 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 5652 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-01-17.18:35:58.079 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-01-17.18:35:58.538 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-01-17.18:35:58.543 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-01-17.18:35:58.543 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-01-17.18:35:58.543 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-01-17.18:35:58.613 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-01-17.18:35:58.613 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 511 ms
+24-01-17.18:35:59.146 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-01-17.18:35:59.155 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-01-17.18:35:59.159 [main            ] INFO  Application            - Started Application in 1.331 seconds (JVM running for 1.875)
+24-01-17.18:36:55.205 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-01-17.18:36:55.205 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-01-17.18:36:55.205 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-01-17.18:43:37.304 [http-nio-8090-exec-6] INFO  ChatGPTAIServiceController - 流式问答请求开始，使用模型：gpt-3.5-turbo 请求信息：[{"content":"请问有什么需要帮助的吗？","role":"system"},{"content":"给我介绍一下足球","role":"user"}]
+24-01-17.18:43:39.997 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 当
+24-01-17.18:43:39.997 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 然
+24-01-17.18:43:39.997 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 可以
+24-01-17.18:43:40.144 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ！
+24-01-17.18:43:40.145 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:43:40.146 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:40.375 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 是
+24-01-17.18:43:40.375 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 一
+24-01-17.18:43:40.375 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 项
+24-01-17.18:43:40.529 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 非
+24-01-17.18:43:40.531 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 常
+24-01-17.18:43:40.532 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 受
+24-01-17.18:43:40.679 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 欢
+24-01-17.18:43:40.680 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 迎
+24-01-17.18:43:40.681 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:40.836 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 全
+24-01-17.18:43:40.837 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:40.838 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 性
+24-01-17.18:43:41.242 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 运
+24-01-17.18:43:41.243 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 动
+24-01-17.18:43:41.244 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:41.244 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 也
+24-01-17.18:43:41.246 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 被
+24-01-17.18:43:41.246 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 称
+24-01-17.18:43:41.293 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 为
+24-01-17.18:43:41.295 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - “
+24-01-17.18:43:41.295 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 世
+24-01-17.18:43:41.419 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 界
+24-01-17.18:43:41.420 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 第
+24-01-17.18:43:41.420 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 一
+24-01-17.18:43:41.539 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 运
+24-01-17.18:43:41.540 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 动
+24-01-17.18:43:41.541 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ”。
+24-01-17.18:43:41.694 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 以下
+24-01-17.18:43:41.695 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 是
+24-01-17.18:43:41.696 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 一
+24-01-17.18:43:41.916 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 些
+24-01-17.18:43:41.918 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 关
+24-01-17.18:43:41.919 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 于
+24-01-17.18:43:42.040 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:43:42.041 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:42.042 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:42.237 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 基
+24-01-17.18:43:42.239 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 本
+24-01-17.18:43:42.240 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 介
+24-01-17.18:43:42.398 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 绍
+24-01-17.18:43:42.400 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ：
+
+
+24-01-17.18:43:42.401 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 1
+24-01-17.18:43:42.822 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - .
+24-01-17.18:43:42.822 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            -  规
+24-01-17.18:43:42.822 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 则
+24-01-17.18:43:42.824 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ：
+24-01-17.18:43:42.825 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:43:42.826 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:42.903 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 比
+24-01-17.18:43:42.904 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:42.906 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 由
+24-01-17.18:43:43.073 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 两
+24-01-17.18:43:43.074 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 支
+24-01-17.18:43:43.075 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 队
+24-01-17.18:43:43.225 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 伍
+24-01-17.18:43:43.225 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 进行
+24-01-17.18:43:43.226 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:43.336 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 每
+24-01-17.18:43:43.338 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 队
+24-01-17.18:43:43.339 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 11
+24-01-17.18:43:43.458 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 名
+24-01-17.18:43:43.460 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:43.462 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 员
+24-01-17.18:43:43.580 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:43:43.581 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 目
+24-01-17.18:43:43.582 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 标
+24-01-17.18:43:43.807 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 是
+24-01-17.18:43:43.808 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 将
+24-01-17.18:43:43.808 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:43.946 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 踢
+24-01-17.18:43:43.947 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 进
+24-01-17.18:43:43.948 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 对
+24-01-17.18:43:44.071 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 方
+24-01-17.18:43:44.071 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:44.073 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 门
+24-01-17.18:43:44.316 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:44.318 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 以
+24-01-17.18:43:44.324 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 得
+24-01-17.18:43:44.347 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 分
+24-01-17.18:43:44.347 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 为
+24-01-17.18:43:44.347 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 目
+24-01-17.18:43:44.501 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 标
+24-01-17.18:43:44.503 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:43:44.505 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 比
+24-01-17.18:43:44.681 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:44.682 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 通
+24-01-17.18:43:44.684 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 常
+24-01-17.18:43:44.804 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 分
+24-01-17.18:43:44.805 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 为
+24-01-17.18:43:44.806 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 两
+24-01-17.18:43:45.022 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 个
+24-01-17.18:43:45.023 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 45
+24-01-17.18:43:45.024 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 分钟
+24-01-17.18:43:45.106 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:45.107 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 半
+24-01-17.18:43:45.107 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 场
+24-01-17.18:43:45.230 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:45.232 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 中
+24-01-17.18:43:45.233 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 间
+24-01-17.18:43:45.419 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 有
+24-01-17.18:43:45.421 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 15
+24-01-17.18:43:45.421 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 分钟
+24-01-17.18:43:45.546 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:45.547 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 休
+24-01-17.18:43:45.548 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 息
+24-01-17.18:43:45.718 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 时间
+24-01-17.18:43:45.721 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:43:45.722 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:46.004 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 员
+24-01-17.18:43:46.005 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 可以
+24-01-17.18:43:46.007 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 用
+24-01-17.18:43:46.086 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 脚
+24-01-17.18:43:46.087 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 、
+24-01-17.18:43:46.088 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 头
+24-01-17.18:43:46.234 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 或
+24-01-17.18:43:46.235 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 身
+24-01-17.18:43:46.236 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 体
+24-01-17.18:43:46.398 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:46.398 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 其他
+24-01-17.18:43:46.399 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 部
+24-01-17.18:43:46.537 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 位
+24-01-17.18:43:46.539 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 触
+24-01-17.18:43:46.540 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:46.728 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:46.729 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 但
+24-01-17.18:43:46.729 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 不能
+24-01-17.18:43:46.856 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 使用
+24-01-17.18:43:46.857 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 手
+24-01-17.18:43:46.857 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 臂
+24-01-17.18:43:47.115 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 或
+24-01-17.18:43:47.116 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 手
+24-01-17.18:43:47.117 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+
+
+24-01-17.18:43:47.368 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 2
+24-01-17.18:43:47.369 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - .
+24-01-17.18:43:47.370 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            -  球
+24-01-17.18:43:47.475 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 场
+24-01-17.18:43:47.476 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ：
+24-01-17.18:43:47.477 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:43:47.622 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:47.623 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 比
+24-01-17.18:43:47.623 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:47.815 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 通
+24-01-17.18:43:47.815 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 常
+24-01-17.18:43:47.815 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 在
+24-01-17.18:43:48.034 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 长
+24-01-17.18:43:48.036 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 方
+24-01-17.18:43:48.036 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 形
+24-01-17.18:43:48.164 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:48.164 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 草
+24-01-17.18:43:48.165 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 地
+24-01-17.18:43:48.451 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 上
+24-01-17.18:43:48.451 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 进行
+24-01-17.18:43:48.451 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:48.551 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 被
+24-01-17.18:43:48.552 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 称
+24-01-17.18:43:48.553 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 为
+24-01-17.18:43:48.721 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:43:48.722 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:48.723 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 场
+24-01-17.18:43:48.952 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:43:48.953 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 国
+24-01-17.18:43:48.954 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 际
+24-01-17.18:43:49.127 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:43:49.127 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:49.129 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 比
+24-01-17.18:43:49.321 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:49.322 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:49.322 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 标
+24-01-17.18:43:49.542 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 准
+24-01-17.18:43:49.543 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 场
+24-01-17.18:43:49.544 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 地
+24-01-17.18:43:49.715 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 尺
+24-01-17.18:43:49.717 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 寸
+24-01-17.18:43:49.717 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 为
+24-01-17.18:43:49.889 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 长
+24-01-17.18:43:49.890 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 105
+24-01-17.18:43:49.890 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 米
+24-01-17.18:43:50.020 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:50.021 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 宽
+24-01-17.18:43:50.021 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 68
+24-01-17.18:43:50.252 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 米
+24-01-17.18:43:50.253 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+
+
+24-01-17.18:43:50.253 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 3
+24-01-17.18:43:50.398 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - .
+24-01-17.18:43:50.398 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            -  球
+24-01-17.18:43:50.398 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 队
+24-01-17.18:43:50.572 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 和
+24-01-17.18:43:50.573 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 位置
+24-01-17.18:43:50.574 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ：
+24-01-17.18:43:50.725 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 每
+24-01-17.18:43:50.726 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 支
+24-01-17.18:43:50.727 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:50.824 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 队
+24-01-17.18:43:50.824 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 由
+24-01-17.18:43:50.824 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 不
+24-01-17.18:43:50.963 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 同
+24-01-17.18:43:50.964 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 位置
+24-01-17.18:43:50.964 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:51.356 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:51.357 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 员
+24-01-17.18:43:51.357 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 组
+24-01-17.18:43:51.358 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 成
+24-01-17.18:43:51.358 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:43:51.359 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 常
+24-01-17.18:43:51.457 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 见
+24-01-17.18:43:51.457 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:51.458 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 位置
+24-01-17.18:43:51.651 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 包
+24-01-17.18:43:51.651 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 括
+24-01-17.18:43:51.652 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 前
+24-01-17.18:43:51.808 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 锋
+24-01-17.18:43:51.808 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 、
+24-01-17.18:43:51.809 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 中
+24-01-17.18:43:52.022 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 场
+24-01-17.18:43:52.023 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 和
+24-01-17.18:43:52.023 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 后
+24-01-17.18:43:52.228 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 卫
+24-01-17.18:43:52.229 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:43:52.229 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 前
+24-01-17.18:43:52.414 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 锋
+24-01-17.18:43:52.414 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 负
+24-01-17.18:43:52.414 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 责
+24-01-17.18:43:52.586 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 进
+24-01-17.18:43:52.587 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 攻
+24-01-17.18:43:52.587 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 和
+24-01-17.18:43:52.756 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 射
+24-01-17.18:43:52.757 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 门
+24-01-17.18:43:52.757 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:52.879 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 中
+24-01-17.18:43:52.879 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 场
+24-01-17.18:43:52.882 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 负
+24-01-17.18:43:53.122 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 责
+24-01-17.18:43:53.122 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 连接
+24-01-17.18:43:53.123 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 进
+24-01-17.18:43:53.403 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 攻
+24-01-17.18:43:53.405 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 和
+24-01-17.18:43:53.405 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 防
+24-01-17.18:43:53.560 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 守
+24-01-17.18:43:53.560 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:53.561 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 后
+24-01-17.18:43:53.724 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 卫
+24-01-17.18:43:53.727 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 负
+24-01-17.18:43:53.728 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 责
+24-01-17.18:43:53.870 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 保
+24-01-17.18:43:53.871 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 护
+24-01-17.18:43:53.871 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:54.117 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 门
+24-01-17.18:43:54.118 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+
+
+24-01-17.18:43:54.118 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 4
+24-01-17.18:43:54.366 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - .
+24-01-17.18:43:54.366 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            -  比
+24-01-17.18:43:54.367 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:54.451 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 和
+24-01-17.18:43:54.452 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 比
+24-01-17.18:43:54.452 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:54.629 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 类型
+24-01-17.18:43:54.631 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ：
+24-01-17.18:43:54.631 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:43:54.813 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:54.814 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 比
+24-01-17.18:43:54.814 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:55.014 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 可以
+24-01-17.18:43:55.015 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 是
+24-01-17.18:43:55.016 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 友
+24-01-17.18:43:55.224 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 谊
+24-01-17.18:43:55.225 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:55.226 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 、
+24-01-17.18:43:55.463 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 联
+24-01-17.18:43:55.464 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:55.464 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 、
+24-01-17.18:43:55.656 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 杯
+24-01-17.18:43:55.657 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:55.657 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 或
+24-01-17.18:43:55.831 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 国
+24-01-17.18:43:55.832 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 际
+24-01-17.18:43:55.832 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 比
+24-01-17.18:43:56.069 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:56.070 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:43:56.071 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 国
+24-01-17.18:43:56.241 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 际
+24-01-17.18:43:56.242 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:43:56.242 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:56.502 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 比
+24-01-17.18:43:56.503 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 赛
+24-01-17.18:43:56.503 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 最
+24-01-17.18:43:56.685 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 著
+24-01-17.18:43:56.686 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 名
+24-01-17.18:43:56.686 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:56.878 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 是
+24-01-17.18:43:56.878 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 世
+24-01-17.18:43:56.878 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 界
+24-01-17.18:43:57.055 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 杯
+24-01-17.18:43:57.055 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:57.057 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 每
+24-01-17.18:43:57.227 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 四
+24-01-17.18:43:57.228 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 年
+24-01-17.18:43:57.229 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 举
+24-01-17.18:43:57.361 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 办
+24-01-17.18:43:57.361 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 一
+24-01-17.18:43:57.361 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 次
+24-01-17.18:43:57.684 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+
+
+24-01-17.18:43:57.685 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 5
+24-01-17.18:43:57.685 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - .
+24-01-17.18:43:57.872 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            -  足
+24-01-17.18:43:57.873 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:57.873 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 明
+24-01-17.18:43:58.035 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 星
+24-01-17.18:43:58.035 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ：
+24-01-17.18:43:58.036 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:43:58.296 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:58.297 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 界
+24-01-17.18:43:58.297 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 有
+24-01-17.18:43:58.420 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 许
+24-01-17.18:43:58.420 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 多
+24-01-17.18:43:58.421 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 著
+24-01-17.18:43:58.568 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 名
+24-01-17.18:43:58.568 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:43:58.568 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:43:58.757 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 员
+24-01-17.18:43:58.758 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:43:58.758 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 如
+24-01-17.18:43:58.936 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 贝
+24-01-17.18:43:58.936 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 利
+24-01-17.18:43:58.937 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 、
+24-01-17.18:43:59.167 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 马
+24-01-17.18:43:59.167 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 拉
+24-01-17.18:43:59.168 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 多
+24-01-17.18:43:59.427 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 纳
+24-01-17.18:43:59.427 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 、
+24-01-17.18:43:59.428 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 克
+24-01-17.18:43:59.649 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 里
+24-01-17.18:43:59.650 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 斯
+24-01-17.18:43:59.650 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 蒂
+24-01-17.18:43:59.881 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 亚
+24-01-17.18:43:59.884 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 诺
+24-01-17.18:43:59.885 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ·
+24-01-17.18:44:00.103 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 罗
+24-01-17.18:44:00.103 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 纳
+24-01-17.18:44:00.103 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 尔
+24-01-17.18:44:00.276 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 多
+24-01-17.18:44:00.277 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 和
+24-01-17.18:44:00.277 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 梅
+24-01-17.18:44:00.425 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 西
+24-01-17.18:44:00.425 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 等
+24-01-17.18:44:00.425 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:44:00.543 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 他
+24-01-17.18:44:00.544 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 们
+24-01-17.18:44:00.544 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 以
+24-01-17.18:44:00.761 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 其
+24-01-17.18:44:00.761 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 出
+24-01-17.18:44:00.761 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 色
+24-01-17.18:44:00.915 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:44:00.915 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 技
+24-01-17.18:44:00.915 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 术
+24-01-17.18:44:01.091 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 和
+24-01-17.18:44:01.092 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 表
+24-01-17.18:44:01.093 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 现
+24-01-17.18:44:01.282 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 而
+24-01-17.18:44:01.284 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 闻
+24-01-17.18:44:01.284 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 名
+24-01-17.18:44:01.416 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+
+
+24-01-17.18:44:01.417 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 足
+24-01-17.18:44:01.418 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:44:01.603 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 是
+24-01-17.18:44:01.603 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 一
+24-01-17.18:44:01.605 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 项
+24-01-17.18:44:01.746 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 团
+24-01-17.18:44:01.746 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 队
+24-01-17.18:44:01.747 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 合
+24-01-17.18:44:01.931 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 作
+24-01-17.18:44:01.932 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:44:01.933 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 运
+24-01-17.18:44:02.113 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 动
+24-01-17.18:44:02.114 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:44:02.114 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 强
+24-01-17.18:44:02.291 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 调
+24-01-17.18:44:02.291 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 团
+24-01-17.18:44:02.292 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 队
+24-01-17.18:44:02.469 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 合
+24-01-17.18:44:02.469 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 作
+24-01-17.18:44:02.470 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 、
+24-01-17.18:44:02.687 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 技
+24-01-17.18:44:02.687 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 术
+24-01-17.18:44:02.687 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 和
+24-01-17.18:44:02.946 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 战
+24-01-17.18:44:02.946 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 术
+24-01-17.18:44:02.946 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:44:03.079 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 它
+24-01-17.18:44:03.079 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 不
+24-01-17.18:44:03.079 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 仅
+24-01-17.18:44:03.255 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 是
+24-01-17.18:44:03.255 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 一
+24-01-17.18:44:03.256 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 项
+24-01-17.18:44:03.387 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 体
+24-01-17.18:44:03.387 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 育
+24-01-17.18:44:03.388 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 运
+24-01-17.18:44:03.520 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 动
+24-01-17.18:44:03.520 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:44:03.521 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 也
+24-01-17.18:44:03.652 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 是
+24-01-17.18:44:03.652 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 一
+24-01-17.18:44:03.653 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 种
+24-01-17.18:44:03.783 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 文
+24-01-17.18:44:03.783 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 化
+24-01-17.18:44:03.784 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 和
+24-01-17.18:44:03.960 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 社
+24-01-17.18:44:03.961 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 交
+24-01-17.18:44:03.961 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 活
+24-01-17.18:44:04.097 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 动
+24-01-17.18:44:04.098 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - ，
+24-01-17.18:44:04.099 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 吸
+24-01-17.18:44:04.378 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 引
+24-01-17.18:44:04.378 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 了
+24-01-17.18:44:04.378 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 数
+24-01-17.18:44:04.462 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 以
+24-01-17.18:44:04.462 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 亿
+24-01-17.18:44:04.462 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 计
+24-01-17.18:44:04.550 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 的
+24-01-17.18:44:04.550 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 球
+24-01-17.18:44:04.550 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 迷
+24-01-17.18:44:04.550 [OkHttp https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/...] INFO  ChatService            - 。
+24-01-17.18:44:04.563 [http-nio-8090-exec-7] INFO  AbstractChatService    - 流式问答请求完成，使用模型：gpt-3.5-turbo
