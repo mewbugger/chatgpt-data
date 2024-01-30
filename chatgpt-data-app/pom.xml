@@ -66,6 +66,20 @@
             <artifactId>chatgpt-sdk</artifactId>
             <version>1.0.3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.wechatpay-apiv3/wechatpay-java
+                 SDK：https://github.com/wechatpay-apiv3/wechatpay-java
+            -->
+        <dependency>
+            <groupId>com.github.wechatpay-apiv3</groupId>
+            <artifactId>wechatpay-java</artifactId>
+            <version>0.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
         <!-- 自身模块 begin -->
         <dependency>
             <groupId>com.wly.chatgpt.data.trigger</groupId>
