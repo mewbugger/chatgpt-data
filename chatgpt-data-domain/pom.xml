@@ -49,6 +49,11 @@
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.github.wechatpay-apiv3</groupId>
+            <artifactId>wechatpay-java</artifactId>
+        </dependency>
+
 
 
 
