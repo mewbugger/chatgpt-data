@@ -23,7 +23,7 @@ wxpay:
     # 商户号
     mchid:
     # 回调地址
-    notify-url: http://你的地址.natapp1.cc/api/v1/mall/pay_notify
+    notify-url: http://wly0735.nat300.top/api/v1/mall/pay_notify
     # 商户API私钥路径
     private-key-path: cert/apiclient_key.pem
     # 商户证书序列号：openssl x509 -in apiclient_cert.pem -noout -serial
