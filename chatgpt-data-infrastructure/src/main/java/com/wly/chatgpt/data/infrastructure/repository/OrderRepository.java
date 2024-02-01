@@ -15,6 +15,9 @@ import com.wly.chatgpt.data.types.enums.OpenAIProductEnableModel;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.annotation.Isolation;
+
+
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
