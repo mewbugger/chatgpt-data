@@ -17,9 +17,9 @@ app:
 wxpay:
   config:
     # 状态；true = 开启、false 关闭
-    enabled: false
+    enabled: true
     # 申请支付主体的 appid
-    appid:
+    appid: 9021000134650081
     # 商户号
     mchid:
     # 回调地址
@@ -30,6 +30,18 @@ wxpay:
     merchant-serial-number:
     # 商户APIV3密钥
     api-v3-key:
+
+# 支付宝支付 - 沙箱 https://opendocs.alipay.com/common/02kkv7
+alipay:
+  config:
+    enabled: true
+    app_id: 9021000134650081
+    merchant_private_key: MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCnB+BqRZn9w80oq1D6BQEHYSTYOPxgUO/hxwfIl+hYbOjkK99AezilgySW6r2/xvsNWftX/mRZXJhEvZa6qdWebmgm5Wig5hzW3f+xDiS3Claneh/PRGodvFj3ewCZM4JqYFdma34890mKow8aPId3+NFcjm1JzQcfgzAZu1FDvJLLGRvrxA8t5TrHdCTALh9NVzmGQoXg1QJEIfu1+EHlmjdl9WMxextuihSIx6oPnZ9+ho953c9XGadom/ANrjZfICUVwJI87ITpIwq52NMC9Z3grUwCxlMsWr8cHAm1vYx279msx7kzbI9D7FnpCtvlOb0DQRs0aMu/lM4JzyPXAgMBAAECggEBAIJ7CLh7/rvaRV5L1ko5toAJRzsR6TVkhMAfNtlgscTB73yvOQuqNqo1NFQgtHIoAt5/OHWY6NNWHi003ZacLaBCJ2KbO4zVthmz+pZZshy7Gs5h/I9xpmPsSqOpluIW9v4anKwJtOfzVaPTlWytdDYoTYS8TmukmrfnR6ASUH1UfbILQJOClEzMUbTHHjA283BUFdRJ0QufH1m8xFu6XeU1wUjSqoM3Xi36WHvM1fy3p5MxRunNAzeei56SJD4vBOzNTq12TcyLjFvt0os7tF0w6He8t2px9cQj5SHg34JjffnK61UtLMCxHQ7snTwps+9GClxAWdJkdm4X9ykXmcECgYEA+S3Zl+bVbwRPEPH4QJ/TTiclNqw3wooAha2zs6F4YglXYVTWT4wyraBT52DmkwOjuU70bTvNwvzeJQsyXNyWGWP7JLMKrxA19VZx76r1eLTf+m8dlKOVGBrHU7vUcAlpU6rv/+EK86CtAV3Jh5y5gNRrJwn1Yce3F2hxxgiA8fkCgYEAq5pc9wOyPer6hMuouEQr/ryCbTfZ5H6cv1k5tPxxqkxfID1ilditcyjBjhKXS5pmKol0HvJgjKjKLycejhb50LdJvzoFvMHl5mcEetch626PiiiMvYQ6c01zxUY1JuNMXANhF71+ZbJICUS3DWD8Fqzox5sx5FWPmQFl7iNGOE8CgYEAuW3XWWUcO6tXM2L9vQmy85vJ46+xJwIPdWtYKTrmHP6amgHKIhRQukhvZ+YCcDDrK8GHv6obaxlGLwbwCY7V3Ds874iVUMWdgd88loAAgD0J2JHLz4sULoXvA27pnh5C1VKFm0NbJQXS+QtUJ6kHmsl4m+qbQpKeu7qrwBUf7/ECgYEAgOmQpxxGvY8VrccVM4A7EL3quUO405duB61u1ZDDjuyalaynr+w7uQRIC4PZ1rjhwVjLPChW8bQnVy7rHFEUUIAwzZA4GSoMnH6Ndf7Bg4zmFiMKP6DjDBWGQA/TBCjDB2ieeugm2R0KUrQlU86k8h/pK3JiE6dXHdlYCoLDUK8CgYBNJUC7gIMOQeaKWREQMXLbIZ92aptTJMeXcdS3RS5gmdAV6A79Je/HdDX6dGIsB4jhocBSVjuNlMxUwnjuOw91Qng8jjob18D4m+Q6iVrjKLwOJxjrHPj3CXRX8cDlPv3jWbLLhRgmrTiLdtZEi8diunWt5O9Tny+Jo23k2rIPxw==
+    alipay_public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtzVf5udsl+GMXUa0+oMLU6i5fLW53vfYmhAJv9njptqfddLcdDuQ2k0Xrz3v/0zQJD9WT7znDytV5bmxViLoRBA6Gxjsc+KtgNudjYhsBiptCq+FMcxjLoEPIBZUeh21ZhGu4NOvLfwlXb31dMtI7zLbA9tj7/aoL8xHbCwcwLSDcK2wcez59x5Q0hJhVZ1Pwk3GD5+ZSQ9v9FRfLquB3rNdV8zrjtzudk7KhTkLW8MNx2JSgZl4yZZREZH+AXfVbej2jAAVNsqaWfJNzt/Ga1DK9Oa/0FTTLOpKYzdKUYEI1ToaJZ7IMcl5SE9/tIurTWUnTXZcdgH43Z8vbkSk5QIDAQAB
+    notify_url: http://wly0735.nat300.top/api/v1/sale/pay_notify
+    return_url: https://www.baidu.com
+    gatewayUrl: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+
 
 
 # 线程池配置

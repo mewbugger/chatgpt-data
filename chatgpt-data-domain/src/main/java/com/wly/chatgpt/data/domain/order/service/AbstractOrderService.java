@@ -1,5 +1,6 @@
 package com.wly.chatgpt.data.domain.order.service;
 
+import com.alipay.api.AlipayApiException;
 import com.wly.chatgpt.data.domain.order.model.aggregates.CreateOrderAggregate;
 import com.wly.chatgpt.data.domain.order.model.entity.*;
 import com.wly.chatgpt.data.domain.order.model.valobj.PayStatusVO;
@@ -61,12 +62,29 @@ public abstract class AbstractOrderService implements IOrderService{
             return payOrderEntity;
         } catch (Exception e) {
             log.error("创建订单，已生成微信支付，返回 openid: {} productId: {}", shopCartEntity.getOpenid(), shopCartEntity.getProductId());
+            System.out.println("内层");
+            e.printStackTrace();
             throw new ChatGPTException(Constants.ResponseCode.UN_ERROR.getCode(), Constants.ResponseCode.UN_ERROR.getInfo());
         }
     }
 
+    /**
+     * 保存订单
+     * @param openid
+     * @param productEntity
+     * @return
+     */
     protected abstract OrderEntity doSaveOrder(String openid, ProductEntity productEntity);
 
-    protected abstract PayOrderEntity doPrepayOrder(String openid, String orderId, String productName, BigDecimal amountTotal);
+    /**
+     * 预支付订单生成
+     * @param openid
+     * @param orderId
+     * @param productName
+     * @param amountTotal
+     * @return
+     * @throws AlipayApiException
+     */
+    protected abstract PayOrderEntity doPrepayOrder(String openid, String orderId, String productName, BigDecimal amountTotal) throws AlipayApiException;
 
 }

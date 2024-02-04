@@ -2,6 +2,7 @@ package com.wly.chatgpt.data.domain.order.model.entity;
 
 import com.wly.chatgpt.data.domain.order.model.valobj.OrderStatusVO;
 import com.wly.chatgpt.data.domain.order.model.valobj.PayTypeVO;
+import com.wly.chatgpt.data.types.enums.ChatGPTModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

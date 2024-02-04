@@ -18,7 +18,7 @@ import javax.annotation.Resource;
  */
 @Slf4j
 @Component
-@LogicStrategy(logicMode = DefaultLogicFactory.LogicModel.USER_QUATA)
+@LogicStrategy(logicMode = DefaultLogicFactory.LogicModel.USER_QUOTA)
 public class UserQuotaFilter implements ILogicFilter<UserAccountQuotaEntity> {
     @Resource
     private IOpenAiRepository openAiRepository;

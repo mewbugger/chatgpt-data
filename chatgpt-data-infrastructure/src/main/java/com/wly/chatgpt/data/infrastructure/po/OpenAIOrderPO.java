@@ -1,5 +1,6 @@
 package com.wly.chatgpt.data.infrastructure.po;
 
+import com.wly.chatgpt.data.types.enums.ChatGPTModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -51,4 +52,6 @@ public class OpenAIOrderPO {
     private Date createTime;
     /** 更新时间 */
     private Date updateTime;
+
+    private String productModelTypes = ChatGPTModel.GPT_3_5_TURBO.getCode();
 }

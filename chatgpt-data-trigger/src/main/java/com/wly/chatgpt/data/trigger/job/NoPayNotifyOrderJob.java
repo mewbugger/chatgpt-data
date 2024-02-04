@@ -1,5 +1,9 @@
 package com.wly.chatgpt.data.trigger.job;
 
+
+import com.alipay.api.AlipayClient;
+import com.alipay.api.request.AlipayTradeQueryRequest;
+import com.alipay.api.response.AlipayTradeQueryResponse;
 import com.google.common.eventbus.EventBus;
 import com.wly.chatgpt.data.domain.order.service.IOrderService;
 import lombok.extern.slf4j.Slf4j;
@@ -27,8 +31,11 @@ public class NoPayNotifyOrderJob {
 
     @Resource
     private IOrderService orderService;
-    @Autowired(required = false)
-    private NativePayService payService;
+    //    @Autowired(required = false)
+//    private NativePayService payService;
+    @Resource
+    private AlipayClient alipayClient;
+
     @Resource
     private EventBus eventBus;
 
@@ -40,7 +47,7 @@ public class NoPayNotifyOrderJob {
     @Scheduled(cron = "0 0/1 * * * ?")
     public void exec() {
         try {
-            if (null == payService) {
+            if (null == alipayClient) {
                 log.info("定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。");
                 return;
             }
@@ -51,19 +58,19 @@ public class NoPayNotifyOrderJob {
             }
             for (String orderId : orderIds) {
                 // 查询结果
-                QueryOrderByOutTradeNoRequest request = new QueryOrderByOutTradeNoRequest();
-                request.setMchid(mchid);
-                request.setOutTradeNo(orderId);
-                Transaction transaction = payService.queryOrderByOutTradeNo(request);
-                if (!Transaction.TradeStateEnum.SUCCESS.equals(transaction.getTradeState())) {
+                AlipayTradeQueryRequest request = new AlipayTradeQueryRequest();
+                request.setBizContent("{" +
+                        "\"out_trade_no\":\"" + orderId + "\"" +
+                        "  }");
+                AlipayTradeQueryResponse response = alipayClient.execute(request);
+                if (!"10000".equals(response.getCode())) {
                     log.info("定时任务，订单支付状态更新，当前订单未支付 orderId is {}", orderId);
                     continue;
                 }
                 // 支付单号
-                String transactionId = transaction.getTransactionId();
-                Integer total = transaction.getAmount().getTotal();
-                BigDecimal totalAmount = new BigDecimal(total).divide(new BigDecimal(100), 2, RoundingMode.HALF_UP);
-                String successTime = transaction.getSuccessTime();
+                String transactionId = response.getTradeNo();
+                BigDecimal totalAmount = new BigDecimal(response.getTotalAmount());
+                String successTime = String.valueOf(response.getSendPayDate());
                 // 更新订单
                 boolean isSuccess = orderService.changeOrderPaySuccess(orderId, transactionId, totalAmount, dateFormat.parse(successTime));
                 if (isSuccess) {
@@ -75,5 +82,42 @@ public class NoPayNotifyOrderJob {
             log.error("定时任务，订单支付状态更新失败", e);
         }
     }
+//    public void exec() {
+//        try {
+//            if (null == payService) {
+//                log.info("定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。");
+//                return;
+//            }
+//            List<String> orderIds = orderService.queryNoPayNotifyOrder();
+//            if (orderIds.isEmpty()) {
+//                log.info("定时任务，订单支付状态更新，暂无未更新订单 orderId is null");
+//                return;
+//            }
+//            for (String orderId : orderIds) {
+//                // 查询结果
+//                QueryOrderByOutTradeNoRequest request = new QueryOrderByOutTradeNoRequest();
+//                request.setMchid(mchid);
+//                request.setOutTradeNo(orderId);
+//                Transaction transaction = payService.queryOrderByOutTradeNo(request);
+//                if (!Transaction.TradeStateEnum.SUCCESS.equals(transaction.getTradeState())) {
+//                    log.info("定时任务，订单支付状态更新，当前订单未支付 orderId is {}", orderId);
+//                    continue;
+//                }
+//                // 支付单号
+//                String transactionId = transaction.getTransactionId();
+//                Integer total = transaction.getAmount().getTotal();
+//                BigDecimal totalAmount = new BigDecimal(total).divide(new BigDecimal(100), 2, RoundingMode.HALF_UP);
+//                String successTime = transaction.getSuccessTime();
+//                // 更新订单
+//                boolean isSuccess = orderService.changeOrderPaySuccess(orderId, transactionId, totalAmount, dateFormat.parse(successTime));
+//                if (isSuccess) {
+//                    // 发布消息
+//                    eventBus.post(orderId);
+//                }
+//            }
+//        } catch (Exception e) {
+//            log.error("定时任务，订单支付状态更新失败", e);
+//        }
+//    }
 
 }

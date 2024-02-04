@@ -10,7 +10,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum PayTypeVO {
 
-    WEIXIN_NATIVE(0, "微信Native支付"),
+    AliPay_NATIVE(0, "阿里沙箱Native支付"),
     ;
 
     private final Integer code;
@@ -19,9 +19,9 @@ public enum PayTypeVO {
     public static PayTypeVO get(Integer code){
         switch (code){
             case 0:
-                return PayTypeVO.WEIXIN_NATIVE;
+                return PayTypeVO.AliPay_NATIVE;
             default:
-                return PayTypeVO.WEIXIN_NATIVE;
+                return PayTypeVO.AliPay_NATIVE;
         }
     }
 
