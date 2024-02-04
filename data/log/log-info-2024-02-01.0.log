@@ -1,0 +1,487 @@
+24-02-01.21:28:07.088 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 2644 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-02-01.21:28:07.089 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-01.21:28:07.907 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-01.21:28:07.912 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-01.21:28:07.912 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-01.21:28:07.912 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-01.21:28:08.011 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-01.21:28:08.011 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 882 ms
+24-02-01.21:28:08.613 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IUserAccountDao' defined in file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-infrastructure\target\classes\com\wly\chatgpt\data\infrastructure\dao\IUserAccountDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'
+24-02-01.21:28:08.615 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-02-01.21:28:08.622 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-02-01.21:28:08.636 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatGPTAIServiceController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IUserAccountDao' defined in file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-infrastructure\target\classes\com\wly\chatgpt\data\infrastructure\dao\IUserAccountDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.wly.chatgpt.data.Application.main(Application.java:16)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chatService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IUserAccountDao' defined in file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-infrastructure\target\classes\com\wly\chatgpt\data\infrastructure\dao\IUserAccountDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openAiRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IUserAccountDao' defined in file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-infrastructure\target\classes\com\wly\chatgpt\data\infrastructure\dao\IUserAccountDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IUserAccountDao' defined in file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-infrastructure\target\classes\com\wly\chatgpt\data\infrastructure\dao\IUserAccountDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 45 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 73 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is java.io.IOException: Failed to parse mapping resource: 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 87 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:700)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:577)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:720)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:187)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$58dcab86.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$58dcab86$$FastClassBySpringCGLIB$$932bba6f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$58dcab86.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 88 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes\mybatis\mapper\user_account_mapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'cn.bugstack.chatgpt.data.infrastructure.po.UserAccountPO'.  Cause: java.lang.ClassNotFoundException: Cannot find class: cn.bugstack.chatgpt.data.infrastructure.po.UserAccountPO
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:100)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:698)
+	... 101 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'cn.bugstack.chatgpt.data.infrastructure.po.UserAccountPO'.  Cause: java.lang.ClassNotFoundException: Cannot find class: cn.bugstack.chatgpt.data.infrastructure.po.UserAccountPO
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:144)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:136)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:126)
+	... 103 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'cn.bugstack.chatgpt.data.infrastructure.po.UserAccountPO'.  Cause: java.lang.ClassNotFoundException: Cannot find class: cn.bugstack.chatgpt.data.infrastructure.po.UserAccountPO
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:150)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 107 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: cn.bugstack.chatgpt.data.infrastructure.po.UserAccountPO
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 109 common frames omitted
+24-02-01.21:30:27.616 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 12916 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-02-01.21:30:27.618 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-01.21:30:28.302 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-01.21:30:28.307 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-01.21:30:28.307 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-01.21:30:28.307 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-01.21:30:28.394 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-01.21:30:28.394 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 754 ms
+24-02-01.21:30:29.121 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.google.common.eventbus.EventBus' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-02-01.21:30:29.123 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-02-01.21:30:29.129 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-02-01.21:30:29.141 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.google.common.eventbus.EventBus' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.google.common.eventbus.EventBus' in your configuration.
+
+24-02-01.21:35:39.276 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 2452 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-02-01.21:35:39.278 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-01.21:35:39.866 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-01.21:35:39.871 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-01.21:35:39.871 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-01.21:35:39.871 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-01.21:35:39.951 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-01.21:35:39.951 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 648 ms
+24-02-01.21:35:40.645 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.google.common.eventbus.EventBus' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-02-01.21:35:40.647 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-02-01.21:35:40.653 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-02-01.21:35:40.665 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.google.common.eventbus.EventBus' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.google.common.eventbus.EventBus' in your configuration.
+
+24-02-01.21:42:34.612 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 15768 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-02-01.21:42:34.614 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-01.21:42:35.250 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-01.21:42:35.255 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-01.21:42:35.255 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-01.21:42:35.255 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-01.21:42:35.345 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-01.21:42:35.345 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 709 ms
+24-02-01.21:42:36.009 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'saleController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.google.common.eventbus.EventBus' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+24-02-01.21:42:36.012 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+24-02-01.21:42:36.018 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-02-01.21:42:36.028 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.google.common.eventbus.EventBus' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.google.common.eventbus.EventBus' in your configuration.
+
+24-02-01.21:43:09.049 [main            ] INFO  Application            - Starting Application using Java 1.8.0_381 on WLY with PID 15180 (D:\Workspace\JavaProject\chatgpt-data\chatgpt-data-app\target\classes started by 王乐岩 in D:\Workspace\JavaProject\chatgpt-data)
+24-02-01.21:43:09.050 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-02-01.21:43:09.633 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8090 (http)
+24-02-01.21:43:09.638 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+24-02-01.21:43:09.638 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-02-01.21:43:09.638 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-02-01.21:43:09.719 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-02-01.21:43:09.719 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 645 ms
+24-02-01.21:43:10.725 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+24-02-01.21:43:10.741 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8090 (http) with context path ''
+24-02-01.21:43:10.777 [main            ] INFO  Application            - Started Application in 1.995 seconds (JVM running for 2.542)
+24-02-01.21:44:00.036 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:44:39.094 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-02-01.21:44:39.095 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-02-01.21:44:39.097 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-02-01.21:44:39.216 [http-nio-8090-exec-2] ERROR AbstractAuthService    - jwt isVerify Err
+com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on 2024-01-27T18:55:18Z.
+	at com.auth0.jwt.JWTVerifier$BaseVerification.assertValidInstantClaim(JWTVerifier.java:346)
+	at com.auth0.jwt.JWTVerifier$BaseVerification.lambda$addMandatoryClaimChecks$17(JWTVerifier.java:308)
+	at com.auth0.jwt.JWTVerifier$BaseVerification$1.verify(JWTVerifier.java:405)
+	at com.auth0.jwt.JWTVerifier.verifyClaims(JWTVerifier.java:482)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:464)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:445)
+	at com.wly.chatgpt.data.domain.auth.service.AbstractAuthService.isVerify(AbstractAuthService.java:120)
+	at com.wly.chatgpt.data.domain.auth.service.AuthService.checkToken(AuthService.java:44)
+	at com.wly.chatgpt.data.trigger.http.SaleController.queryProductList(SaleController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+24-02-01.21:44:39.274 [http-nio-8090-exec-4] ERROR AbstractAuthService    - jwt isVerify Err
+com.auth0.jwt.exceptions.TokenExpiredException: The Token has expired on 2024-01-27T18:55:18Z.
+	at com.auth0.jwt.JWTVerifier$BaseVerification.assertValidInstantClaim(JWTVerifier.java:346)
+	at com.auth0.jwt.JWTVerifier$BaseVerification.lambda$addMandatoryClaimChecks$17(JWTVerifier.java:308)
+	at com.auth0.jwt.JWTVerifier$BaseVerification$1.verify(JWTVerifier.java:405)
+	at com.auth0.jwt.JWTVerifier.verifyClaims(JWTVerifier.java:482)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:464)
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:445)
+	at com.wly.chatgpt.data.domain.auth.service.AbstractAuthService.isVerify(AbstractAuthService.java:120)
+	at com.wly.chatgpt.data.domain.auth.service.AuthService.checkToken(AuthService.java:44)
+	at com.wly.chatgpt.data.trigger.http.SaleController.queryProductList(SaleController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+24-02-01.21:45:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:45:48.971 [http-nio-8090-exec-7] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY开始<xml><ToUserName><![CDATA[gh_28c92be94d7d]]></ToUserName>
+<FromUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></FromUserName>
+<CreateTime>1706795150</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[403]]></Content>
+<MsgId>24435432622348061</MsgId>
+</xml>
+24-02-01.21:45:49.144 [http-nio-8090-exec-7] INFO  WeiXinPortalController - 接收微信公众号信息请求oBzHc6QeSFc39Z_kjTmDqJmUoSgY完成<xml>
+  <ToUserName><![CDATA[oBzHc6QeSFc39Z_kjTmDqJmUoSgY]]></ToUserName>
+  <FromUserName><![CDATA[gh_28c92be94d7d]]></FromUserName>
+  <CreateTime>1706795149</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[您的验证码为： 1563 有效期3分组]]></Content>
+</xml>
+24-02-01.21:45:55.513 [http-nio-8090-exec-10] INFO  AuthController         - 鉴权登录校验开始，验证码：1563
+24-02-01.21:45:55.707 [http-nio-8090-exec-10] INFO  AuthController         - 鉴权登录校验完成，验证码：1563 结果： {"code":"0000","info":"验证成功","openId":"oBzHc6QeSFc39Z_kjTmDqJmUoSgY","token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvQnpIYzZRZVNGYzM5Wl9ralRtRHFKbVVvU2dZIiwib3BlbklkIjoib0J6SGM2UWVTRmMzOVpfa2pUbURxSm1Vb1NnWSIsImV4cCI6MTcwNjgwNTIzNSwiaWF0IjoxNzA2Nzk1MTU1LCJqdGkiOiI3NzNmNTNjNy1jMTFhLTRhZjUtOGQ3NS0wYWE4ZWNjM2I3OWUifQ.y9734WksmH24TRuvHmqYzfGOXpjaeAD5Zyuo6VSS8U4"}
+24-02-01.21:45:55.752 [http-nio-8090-exec-3] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-02-01.21:45:56.033 [http-nio-8090-exec-3] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-02-01.21:45:56.093 [http-nio-8090-exec-3] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-02-01.21:45:56.120 [http-nio-8090-exec-1] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-02-01.21:45:58.446 [http-nio-8090-exec-4] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单开始 openid:oBzHc6QeSFc39Z_kjTmDqJmUoSgY productId:1001
+24-02-01.21:45:58.479 [http-nio-8090-exec-4] INFO  AbstractOrderService   - 创建订单-完成，生成支付单。openid: oBzHc6QeSFc39Z_kjTmDqJmUoSgY orderId: 447433439710 payUrl: 因你未配置支付渠道，所以暂时不能生成有效的支付URL。请配置支付渠道后，在application-dev.yml中配置支付渠道信息
+24-02-01.21:45:58.480 [http-nio-8090-exec-4] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单完成 openid: oBzHc6QeSFc39Z_kjTmDqJmUoSgY productId: 1001 orderPay: PayOrderEntity{openid='oBzHc6QeSFc39Z_kjTmDqJmUoSgY', orderId='447433439710', payUrl='因你未配置支付渠道，所以暂时不能生成有效的支付URL。请配置支付渠道后，在application-dev.yml中配置支付渠道信息', payStatus=0: 等待支付}
+24-02-01.21:46:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:46:18.634 [http-nio-8090-exec-6] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-02-01.21:46:18.641 [http-nio-8090-exec-5] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-02-01.21:46:23.625 [http-nio-8090-exec-8] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-02-01.21:46:23.631 [http-nio-8090-exec-7] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-02-01.21:46:26.809 [http-nio-8090-exec-9] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-02-01.21:46:26.813 [http-nio-8090-exec-10] INFO  SaleController         - 商品查询 [{"available":false,"price":0.01,"productDesc":"测试商品请勿下单","productId":1001,"productName":"OpenAi 测试商品(3.5)","quota":100},{"available":false,"price":0.02,"productDesc":"测试商品请勿下单","productId":1002,"productName":"OpenAi 测试商品(3.5)","quota":200},{"available":false,"price":10.00,"productDesc":"测试商品请勿下单","productId":1003,"productName":"OpenAi 测试商品(3.5&4.0)","quota":50}]
+24-02-01.21:47:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:48:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:49:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:50:00.007 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-01.21:50:00.007 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:50:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:51:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:52:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:53:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:53:03.204 [http-nio-8090-exec-2] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单开始 openid:oBzHc6QeSFc39Z_kjTmDqJmUoSgY productId:1001
+24-02-01.21:53:03.206 [http-nio-8090-exec-2] INFO  AbstractOrderService   - 创建订单-存在，已生成微信支付，返回 openid: oBzHc6QeSFc39Z_kjTmDqJmUoSgY orderId: 447433439710 payUrl: 因你未配置支付渠道，所以暂时不能生成有效的支付URL。请配置支付渠道后，在application-dev.yml中配置支付渠道信息
+24-02-01.21:53:03.206 [http-nio-8090-exec-2] INFO  SaleController         - 用户商品下单，根据商品ID创建支付单完成 openid: oBzHc6QeSFc39Z_kjTmDqJmUoSgY productId: 1001 orderPay: PayOrderEntity{openid='oBzHc6QeSFc39Z_kjTmDqJmUoSgY', orderId='447433439710', payUrl='因你未配置支付渠道，所以暂时不能生成有效的支付URL。请配置支付渠道后，在application-dev.yml中配置支付渠道信息', payStatus=0: 等待支付}
+24-02-01.21:54:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:55:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:56:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:57:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:58:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.21:59:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:00:00.018 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-01.22:00:00.018 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:00:00.018 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:01:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:02:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:03:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:04:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:05:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:06:00.011 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:07:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:08:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:09:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:10:00.006 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-01.22:10:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:10:00.006 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:11:00.015 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:12:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:13:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:14:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:15:00.000 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:16:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:17:00.007 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:18:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:19:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:20:00.018 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-01.22:20:00.018 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:20:00.018 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:21:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:22:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:23:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:24:00.012 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:25:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:26:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:27:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:28:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:29:00.004 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:30:00.018 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-01.22:30:00.018 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:30:00.018 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:31:00.006 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:32:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:33:00.005 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:34:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:35:00.014 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:36:00.010 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:37:00.013 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:38:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:39:00.009 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:40:00.017 [scheduling-1    ] INFO  OrderReplenishmentJob  - 定时任务，订单补货不存在，查询 orderIds is null
+24-02-01.22:40:00.017 [scheduling-1    ] INFO  TimeoutCloseOrderJob   - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:40:00.017 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:41:00.001 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:42:00.003 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:43:00.002 [scheduling-1    ] INFO  NoPayNotifyOrderJob    - 定时任务，订单支付状态更新。应用未配置支付渠道，任务不执行。
+24-02-01.22:43:12.641 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-02-01.22:43:12.648 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
