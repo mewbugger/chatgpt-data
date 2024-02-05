@@ -61,9 +61,9 @@ chatgpt:
     config:
       # 官网地址 https://api.openai.com/
       # https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/
-      api-host: https://service-d6wuqy4n-1320869466.cd.apigw.tencentcs.com/
+      api-host: https://pro-share-aws-api.zcyai.com/
       # 官网申请 https://platform.openai.com/account/api-keys
-      api-key: sk-FpBzSH9hJwk1FQQz21Be10DeD6B44e1c905eAaD3759923A7
+      api-key: sk-WlJ21JsvbCvsmezJ586dEf5aE8Cf447d878a4fFaD25e9dBd
 
       # sk-FpBzSH9hJwk1FQQz21Be10DeD6B44e1c905eAaD3759923A7
       # 自主申请 http://api.xfg.im:8080/authorize?username=xfg&password=123 - 有时效性，主要为了大家学习使用
