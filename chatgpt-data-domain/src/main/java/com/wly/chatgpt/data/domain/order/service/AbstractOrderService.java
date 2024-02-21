@@ -32,7 +32,7 @@ public abstract class AbstractOrderService implements IOrderService{
             // 1. 查询有效的未支付订单，如果存在直接返回微信支付 Native CodeUrl
             UnpaidOrderEntity unpaidOrderEntity = orderRepository.queryUnpaidOrder(shopCartEntity);
             if (null != unpaidOrderEntity && PayStatusVO.WAIT.equals(unpaidOrderEntity.getPayStatus()) && null != unpaidOrderEntity.getPayUrl()) {
-                log.info("创建订单-存在，已生成微信支付，返回 openid: {} orderId: {} payUrl: {}", openid, unpaidOrderEntity.getOrderId(), unpaidOrderEntity.getPayUrl());
+                log.info("创建订单-存在，已生成支付宝支付，返回 openid: {} orderId: {} payUrl: {}", openid, unpaidOrderEntity.getOrderId(), unpaidOrderEntity.getPayUrl());
                 return PayOrderEntity.builder()
                         .openid(openid)
                         .orderId(unpaidOrderEntity.getOrderId())
@@ -40,7 +40,7 @@ public abstract class AbstractOrderService implements IOrderService{
                         .payStatus(unpaidOrderEntity.getPayStatus())
                         .build();
             } else if (null != unpaidOrderEntity && null == unpaidOrderEntity.getPayUrl()) {
-                log.info("创建订单-存在，未生成微信支付，返回 openid: {} orderId: {}", openid, unpaidOrderEntity.getOrderId());
+                log.info("创建订单-存在，未生成支付宝支付，返回 openid: {} orderId: {}", openid, unpaidOrderEntity.getOrderId());
                 PayOrderEntity payOrderEntity = this.doPrepayOrder(openid, unpaidOrderEntity.getOrderId(), unpaidOrderEntity.getProductName(), unpaidOrderEntity.getTotalAmount());
                 log.info("创建订单-完成，生成支付单。openid: {} orderId: {} payUrl: {}", openid, payOrderEntity.getOrderId(), payOrderEntity.getPayUrl());
                 return payOrderEntity;
@@ -61,7 +61,7 @@ public abstract class AbstractOrderService implements IOrderService{
 
             return payOrderEntity;
         } catch (Exception e) {
-            log.error("创建订单，已生成微信支付，返回 openid: {} productId: {}", shopCartEntity.getOpenid(), shopCartEntity.getProductId());
+            log.error("创建订单，已生成支付宝支付，返回 openid: {} productId: {}", shopCartEntity.getOpenid(), shopCartEntity.getProductId());
             System.out.println("内层");
             e.printStackTrace();
             throw new ChatGPTException(Constants.ResponseCode.UN_ERROR.getCode(), Constants.ResponseCode.UN_ERROR.getInfo());
